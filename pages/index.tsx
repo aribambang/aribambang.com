@@ -3,6 +3,7 @@ import { Box, Heading, VStack, Text } from '@chakra-ui/react';
 import PageTransition from '../components/page-transition';
 import Section from '../components/section';
 import Link from '../components/link';
+import TechStack from '../components/tech-stack';
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,10 @@ const Home: NextPage = () => {
                 </Text>
               </VStack>
             </VStack>
+          </Section>
+
+          <Section full={false}>
+            <TechStack />
           </Section>
         </VStack>
       </PageTransition>
